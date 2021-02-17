@@ -282,7 +282,7 @@ router.post('/create',upload.single('file'), (req, res, next) => {
           });
 
           const font2 = await Jimp.loadFont(Jimp.FONT_SANS_64_BLACK).then(font => {
-            image.print(font, 1000, 1260, "President");
+            image.print(font, 1000, 1350, "President");
           });
            
           var filename=new Date().toISOString().replace(/:/g, '-')+data[1]+".png";
